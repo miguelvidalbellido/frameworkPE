@@ -1,11 +1,14 @@
-package frameworkPE;
+package ejercicios;
 import frameworkPE.*;
 public class test {
 
 	public static void main(String[] args) {
 		// APARTADO DE TESTEO
 		
-		nnumeros.productoDivisoresImpares();
+		int resultado = 0;
+		resultado = digitos.sumaDigitos();
+		System.out.println(resultado);
+		
 		
 	}
 

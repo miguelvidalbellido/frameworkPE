@@ -38,8 +38,8 @@ public class operacions {
 	}
 
 	/*								INT			 						*/
-	/*							OBTENER LA MEDIA						*/
-	public static float media(int n1, int n2){
+	/*							OBTENER LA MEDIA DOS NÚMEROS				ESTA MAL		*/
+	public static float mediaDosNums(int n1, int n2){
 		float average = 0.0f;
 		int suma = 0;
 		if(suma!=0){
@@ -51,98 +51,23 @@ public class operacions {
 	}
 
 	/*								INT			 						*/
+	/*							OBTENER LA MEDIA VARIOS NUMS						*/
+	public static float media(int n1, int n2){//n1 es la suma de los nums, n2 es la cantidad entre la cual dividir
+		float resultado = 0;
+		if(n1!=0){
+			resultado = n1/n2;
+		}else {
+			resultado = 0;
+		}
+		return resultado;
+	}
+
+	/*								INT			 						*/
 	/*						CONVERTIR STRING EN INT						*/
 	public static int stringToInt(String cadena){
 		int num = 0;
 		num=Integer.parseInt(cadena);
 		return num;
-	}
-	
-	/*								INT			 						*/
-	/*					WHILE INTERRUTOR REFACTORIZAR					*/
-	/*public static void whileInterruptor(){
-		boolean interruptor = false;
-		while(interruptor==false){
-			if(CONDICIÓN PARA SALIR){
-				interruptor = true;
-			}else{
-				OPERACIÓNES A REALIZAR
-			}
-		}//end_while
-	}/*
-	
-	/*								INT			 						*/
-	/*					FOR N NÚMEROS REFACTORIZAR						*/
-	/*public static void nNumeros(){
-		int n = 0;
-		n = validar.solicitarNum();
-		for(int i=1;i<=n;i++){
-			
-			 OPERACIÓNES A REALIZAR 
-		}//end_for
-	}/*
-
-	/*								INT			 						*/
-	/*					FOR 5 PRIMEROS REFACTORIZAR						*/
-	/*public static void nNumeros(){
-		for(int i=1;i<=5;i++){
-			OPERACIÓNES A REALIZAR 
-		}//end_for
-	}/*
-
-	/*								INT			 						*/
-	/*						DÍGITOS REFACTORIZAR						*/
-	public static void obtenerDigitos(){
-		/*int copia = 0;
-		int num = 0;
-		int digito = 0;
-		num = validar.solicitarNum();
-		copia = num;
-		while(num>0){
-			digito = num%10;
-			num = num/10;
-			//System.out.println(digito);
-		}*/
-	}
-
-	/*								INT			 						*/
-	/*						DIVISORES REFACTORIZAR						*/
-	public static void obtenerDivisores(){
-		/*int divisor = 0;
-		int num = 0;
-		num = validar.solicitarNum();
-		for(int i=1;i<=num;i++) {
-			divisor = 0;
-			if(num%i==0) {
-				divisor = i;
-				System.out.println(divisor);
-			}
-		}*/
-	}
-
-	/*								INT			 						*/
-	/*						MENOR Y MAYOR REFACTORIZAR					*/
-	public static void menorYmayor(){
-		/*
-		int pivot = 0;
-		int major = 0;
-		int menor = 0;
-		int num = 0;
-		num = validar.solicitarNum();
-		if (pivot == 0) {
-			pivot++;
-			major = num;
-			menor = num;
-		}else {
-			if(num>major) {
-				major = num;
-			}
-			if(num<menor) {
-				menor = num;
-			}
-		}
-		System.out.println(major);
-		*/
 	}
 	
 	

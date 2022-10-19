@@ -38,8 +38,8 @@ public class operacions {
 	}
 
 	/*								INT			 						*/
-	/*							OBTENER LA MEDIA						*/
-	public static float media(int n1, int n2){
+	/*							OBTENER LA MEDIA DOS NÚMEROS				ESTA MAL		*/
+	public static float mediaDosNums(int n1, int n2){
 		float average = 0.0f;
 		int suma = 0;
 		if(suma!=0){
@@ -48,6 +48,18 @@ public class operacions {
 			average = 0;
 		}
 		return average;
+	}
+
+	/*								INT			 						*/
+	/*							OBTENER LA MEDIA VARIOS NUMS						*/
+	public static float media(int n1, int n2){//n1 es la suma de los nums, n2 es la cantidad entre la cual dividir
+		float resultado = 0;
+		if(n1!=0){
+			resultado = n1/n2;
+		}else {
+			resultado = 0;
+		}
+		return resultado;
 	}
 
 	/*								INT			 						*/

@@ -1,4 +1,4 @@
-package frameworkPE;
+package ejercicios;
 
 public class divisores {
     /*
@@ -20,8 +20,10 @@ public class divisores {
     */
 
 	/* 1							SUMA DE DIVISORES						*/
-    public static int sumaDeDivisores(int num){
+    public static int sumaDeDivisores(){
+        int num = 0;
         int resultado = 0;
+        num = validar.solicitarNum();
         for(int i=1;i<=num;i++){
             if((num%i)==0){
                 resultado = resultado+i;
@@ -31,8 +33,10 @@ public class divisores {
     }
 
     /* 2							PRODUCTO DE DIVISORES						*/
-    public static int productoDeDivisores(int num){
-        int resultado = 1; // Al ser el producto la declarámos en 1, de lo contrario daría 0 el resultado
+    public static float productoDeDivisores(){
+        int num = 0;
+        float resultado = 1; // Al ser el producto la declarámos en 1, de lo contrario daría 0 el resultado
+        num = validar.solicitarNum();
         for(int i=1;i<=num;i++){
             if((num%i)==0){
                 resultado = resultado*i;
@@ -42,8 +46,10 @@ public class divisores {
     }
 
     /* 3						CANTIDAD DE DIVISORES						*/
-    public static int numeroDeDivisores(int num){
+    public static int numeroDeDivisores(){
+        int num = 0;
         int cont = 0;
+        num = validar.solicitarNum();
         for(int i=1;i<=num;i++){
             if((num%i)==0){
                 cont++;
@@ -53,8 +59,10 @@ public class divisores {
     }
 
     /* 4					CANTDAD DE DIVISORES PARES						*/
-    public static int numeroDeDivisoresPares(int num){
+    public static int numeroDeDivisoresPares(){
+        int num = 0;
         int cont = 0;
+        num = validar.solicitarNum();
         for(int i=1;i<=num;i++){
             if((num%i)==0){// comprobamos si es divisor
                 if((i%2)==0){// comprobamos si es par
@@ -66,8 +74,10 @@ public class divisores {
     }
 
     /* 5					CANTDAD DE DIVISORES IMPARES					*/
-    public static int numeroDeDivisoresImpares(int num){
+    public static int numeroDeDivisoresImpares(){
+        int num = 0;
         int cont = 0;
+        num = validar.solicitarNum();
         for(int i=1;i<=num;i++){
             if((num%i)==0){// comprobamos si es divisor
                 if((i%2)!=0){// comprobamos si es impar
@@ -79,8 +89,10 @@ public class divisores {
     }
 
     /* 6					SUMA DE LOS DIVISORES PARES						*/
-    public static int sumaDeDivisoresPares(int num){
+    public static int sumaDeDivisoresPares(){
+        int num = 0;
         int suma = 0;
+        num = validar.solicitarNum();
         for(int i=1;i<=num;i++){
             if((num%i)==0){// comprobamos si es divisor
                 if((i%2)==0){// comprobamos si es par
@@ -92,8 +104,10 @@ public class divisores {
     }
 
     /* 7					SUMA DE LOS DIVISORES IMPARES						*/
-    public static int sumaDeDivisoresImpares(int num){
+    public static int sumaDeDivisoresImpares(){
+        int num = 0;
         int suma = 0;
+        num = validar.solicitarNum();
         for(int i=1;i<=num;i++){
             if((num%i)==0){// comprobamos si es divisor
                 if((i%2)!=0){// comprobamos si es impar
@@ -105,8 +119,10 @@ public class divisores {
     }
     
     /* 8					PRODUCTO DE LOS DIVISORES PARES						*/
-    public static int productoDeDivisoresPares(int num){
+    public static int productoDeDivisoresPares(){
+        int num = 0;
         int producto = 1;// se declara a 1
+        num = validar.solicitarNum();
         for(int i=1;i<=num;i++){
             if((num%i)==0){// comprobamos si es divisor
                 if((i%2)==0){// comprobamos si es par
@@ -118,8 +134,10 @@ public class divisores {
     }
 
     /* 9					PRODUCTO DE LOS DIVISORES IMPARES						*/
-    public static int productoDeDivisoresImpares(int num){
+    public static int productoDeDivisoresImpares(){
+        int num = 0;
         int producto = 1;// se declara a 1
+        num = validar.solicitarNum();
         for(int i=1;i<=num;i++){
             if((num%i)==0){// comprobamos si es divisor
                 if((i%2)!=0){// comprobamos si es impar
