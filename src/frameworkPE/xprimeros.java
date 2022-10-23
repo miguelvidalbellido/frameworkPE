@@ -1,5 +1,7 @@
 package frameworkPE;
 
+import javax.swing.JOptionPane;
+
 public class xprimeros {
 /* N NÚMEROS */
 	// contadores

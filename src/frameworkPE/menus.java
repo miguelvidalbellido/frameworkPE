@@ -12,6 +12,23 @@ public class menus {
         return cont;
     }
 
+	// DESEA CONTINUAR EXAMEN
+//	public static int deseaContinuarFormatoExamen(String text,String desc,String quest,String[] option){
+//			int sel = 0;
+//			int confirm = 0;
+//			do {
+//				sel = JOptionPane.showOptionDialog(null,text,desc,0,JOptionPane.QUESTION_MESSAGE,null,option,option[0]);	
+//				if (sel == -1) {
+//					confirm = JOptionPane.OK_OPTION;
+//				}
+//				else {
+//					confirm = JOptionPane.showConfirmDialog(null,quest);
+//				}
+//			} while (confirm != JOptionPane.OK_OPTION);
+//		
+//		System.out.println(confirm);
+//    }
+
     /*								INT								*/
 	/*						DESEA CONTINUAR BOOLEAN					*/
     public static boolean deseaContinuarBoolean(String mensaje){
